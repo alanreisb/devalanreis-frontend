@@ -1,24 +1,32 @@
-@media (min-width:1200px) and (max-width:2000px){
+@media only screen and (max-width:2000px){
 .indicador-habilidades{
- left: unset ;
+ left: 100px !important ;
  float: right;
  width:50% !important ;
 
 }
+
+.form-mensagem{
+  margin-left: 60px;
 }
-@media (max-width:1200px) and (min-width:800px){
+}
+@media only screen and (max-device-width:1200px) {
   html,body{
     overflow: auto;
   }
 .indicador-habilidades{
- left: 80px ;
+ left: 120px!important;
  float: left;
  width:80% !important ;
 
 }
+
+.form-mensagem{
+  min-width: 480px!important;
+}
 }
 
-@media (max-width: 800px) {
+@media only screen and (max-width: 800px) {
     html,body{
         overflow: auto;
     }
@@ -187,10 +195,10 @@
 //Indicador
 .indicador-habilidades{
     float: left !important;
-    clear: left;
+    
     margin-top:20px;
-    left:100px;
-    width: 80%;
+    left:0px !important;
+    width: 400px;
 
     > .lista{
     
@@ -240,10 +248,7 @@
 
   .form-mensagem{
     float:left !important;
-    min-width: 50px;
-    margin-top: 50px;
-    margin-left: 10% !important;
-    margin-right: 10% !important;
+    
     
   > .formulario{
     > .titulo-form{
@@ -271,7 +276,7 @@
   
   }
 
-@media (max-width: 580px) {
+@media only screen and (max-width: 580px) {
   .pagina-principal{
     overflow: hidden !important;
    > .titulo-container{
@@ -322,12 +327,18 @@
   
     }
     .indicador-habilidades{
-    width: 80%;
+    width: 80%!important;
+    left: 0px !important;
+  }
+
+  .form-mensagem{
+    margin-left: 10%;
+    margin-right:10%;
   }
     
 }
 
-@media (max-width:400px){
+@media only screen and (max-width:400px){
   .pagina-principal{
     overflow: hidden !important;
   }
@@ -358,7 +369,7 @@
 }
 }
 
-@media (max-width:350px){
+@media only screen and (max-width:350px){
   .menu-lateral{
       
     
@@ -369,7 +380,7 @@
 }
 }
 
-@media (max-width:250px){
+@media only screen and (max-width:250px){
   .piramide-container{
     
     top: 200% !important;

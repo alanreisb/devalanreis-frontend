@@ -78,11 +78,11 @@ a:visited{
 //Menu Lateral
 
 .menu-lateral{
-
+  
   background: #181818;
   width: 60px;
   height: 100%;
-  position: absolute;
+  position: fixed;
   top: 0;
   z-index: 3;
   min-height: 500px;
@@ -387,8 +387,8 @@ a:visited{
 //### HABILIDADES ###
 //Indicador
 .indicador-habilidades{
-  float: right !important;
-  clear: none !important;
+  float: right ;
+  clear: none ;
   width: 50% !important;
   position: relative;
   margin-left: 5%;
@@ -466,7 +466,7 @@ a:visited{
 
 .form-mensagem{
   height: 70%;
-  width: 30%;
+  width: 480px;
   float: right;
   margin-right:15%;
 > .formulario{
