@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+require('dotenv').config()
 //Imagem
 import Envelope from '../imagens/icones contato/envelope.svg';
 
@@ -36,7 +37,7 @@ class FormMessage extends Component {
 
         e.preventDefault();
         console.log('exectando');
-        axios.post('https://devalanreis-backend.herokuapp.com/contatos/enviar', {
+        axios.post(`${process.env.APP_CREATE_REACT_API_URL}`, {
             nome: this.state.nome,
             email: this.state.email,
             mensagem: this.state.mensagem
