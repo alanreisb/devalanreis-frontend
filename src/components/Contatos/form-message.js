@@ -36,19 +36,20 @@ class FormMessage extends Component {
     handleSubmit(e) {
 
         e.preventDefault();
-        console.log(`${process.env.REACT_APP_API_URL}`);
         axios.post(`${process.env.REACT_APP_API_URL}`, {
             nome: this.state.nome,
             email: this.state.email,
             mensagem: this.state.mensagem
         })
             .then(function (response) {
-                if(response.ok){
-                    alert('Obrigado pelo contato. \n Mensagem foi enviada!');
+                if(response.status === 200){
+                    window.alert('Obrigado pelo contato. \n Mensagem foi enviada!');
                 }
+               
             })
             .catch(function (error) {
-                alert('Desculpe, ocorreu um erro. \n Por favor tente outra forma de contato.');
+                window.alert('Desculpe, ocorreu um erro. \n Por favor tente outra forma de contato.')
+                   console.log(error);
             });
     };
     render() {
