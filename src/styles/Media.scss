@@ -1,0 +1,331 @@
+@media (max-width: 800px) {
+    html,body{
+        overflow: auto;
+    }
+// ### MENU LATERAL ###
+    .menu-lateral{
+
+        display: inline-flex;
+        width: 100% !important;
+        height: 60px!important;
+        position: relative;
+        top: 0;
+        min-height: 20px;
+        
+      
+        .botao-lateral {
+      width: 100%!important;
+      height: 100%!important;
+      background-size: 30%;
+      padding: 5%;
+        }
+        
+      > .lista{
+        top: 5px;
+        width: 100% !important;
+        height: 100%;
+        margin-top: 0;
+        text-align: left;
+        margin-left: auto;
+        margin-right:auto;
+        position: relative;
+      
+         
+      
+       > .item{
+
+        height: 50px;
+        width: 20%!important;
+        float: left !important;
+        
+      
+        
+      
+        > .link:hover button{
+          color:white !important;
+          background-image: none !important;
+          
+        }
+       }
+      }
+
+      > .contatos-lista{
+        position: fixed;
+        top:40%;
+        right:0;
+        display: block;
+        bottom: initial;
+        width: auto;
+        background-color:rgba(0,0,0,0.4);
+          > .item{
+         height: 30px !important;
+         width: 30px !important;
+         margin-right: 5px !important;
+         margin-left: 5px !important;
+         padding: 0;
+          }
+      }
+
+}
+
+//### PRINCIPAL ###
+.menu-principal{
+    padding: 0;
+    width: 100%;
+    text-align: center;
+    > .lista{
+        float:none;
+        padding:none;
+        width: 100%;
+    > .item{
+        width: 25%;
+        padding: 0;
+    > .nav-link{
+    font-size: 0.7rem;
+    width: 100%;
+    
+
+    }
+}
+}
+}
+
+.pagina-principal{
+  margin:0;
+  height:100% ;
+  width: 100%;
+  overflow: hidden; 
+
+  > .titulo-container{
+    font-size: 1.5rem !important;
+    
+    > .titulo{
+      top: 40% !important;
+    
+    
+    
+  
+
+    > .digitacao{
+      line-height: 1;
+      font-weight: 300;
+      border-right: .15em solid transparent; /* The typwriter cursor */
+      letter-spacing: '.15em'; /* Adjust as needed */
+
+      
+    }
+  }
+
+  > .subtitulo{
+    
+    top:55%;
+    font-size: 1.0rem;
+    
+    
+  }
+  }
+   >.cover {
+    width: 20%;
+    height: 50%;
+    left: 70%;
+    margin-top:0 !important;
+    top:30%;
+    position: absolute;
+      > .imagem{
+     
+     }
+  }
+}
+
+//### SOBRE ###
+.texto-principal{
+    clear: right;   
+    height: 100%;
+    width: 80%;
+    margin-top:80px;
+    margin-left:15px;
+   
+  }
+
+  .piramide-container{
+    height: 100%;
+    top: 80%;
+    margin-left:auto !important;
+    margin-right:auto !important;
+
+    left:0 !important;
+    width: 100%;
+        
+
+  }
+}
+
+//### HABILIDADES ###
+//Indicador
+.indicador-habilidades{
+    float: left !important;
+    clear: left;
+    margin-top:20px;
+    margin-left:15px;
+    min-width: 400px;
+    position: relative;
+    
+
+    > .lista{
+    
+    }
+  
+    > .item{
+      height: 100%;
+      width: 240px;
+      border-radius: 10px;
+    }
+  }
+
+
+  //### CONTATOS ###
+  .contatos-localizacao{
+  min-width: 400px;
+  left:5%!important;
+  margin-top: 80px;
+  width: 80% ;
+
+  
+    > .secao{
+        > .mapa{
+            width:80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+      > .titulo{
+          width: 100%;
+        > .icone{
+      
+  
+        }
+      }
+      > .endereco{
+       
+      }
+  
+      > .icones-contato{
+        
+        width: 15px;
+        height: 15px;
+      }
+    }
+  
+  }
+
+  .form-mensagem{
+    float:left !important;
+    min-width: 50px;
+    margin-top: 50px;
+    margin-left: 10% !important;
+    margin-right: 10% !important;
+    
+  > .formulario{
+    > .titulo-form{
+
+      > .icone-form{
+      
+  
+        
+      }
+    }
+  
+    > .subtitulo{
+      
+  
+    }
+    > .etiqueta{
+    
+    }
+    > .form-botao{
+ 
+      
+    }
+  }
+  
+  
+  }
+
+@media (max-width: 580px) {
+  .pagina-principal{
+   > .titulo-container{
+     > .titulo{
+      top: 30% !important;
+    }
+
+    > .subtitulo{
+      top:45%;
+    }
+  }
+
+   > .cover{
+      top: 15% !important;
+    }
+  }
+    .menu-principal{
+    
+        > .lista{
+          
+          text-align: right;
+          
+        > .item{
+            float: right;
+          padding: 0;
+        > .nav-link{
+        font-size: 0.2rem;
+        padding: 1px;
+       
+        
+    
+        }
+    }
+    }
+    }
+
+    .piramide-container{
+  
+      top: 100%;
+
+          
+  
+    }
+  
+    
+}
+
+@media (max-width:400px){
+.piramide-container{
+  
+  top: 120%;
+  margin-left: auto !important;
+  margin-right: auto !important;
+
+      
+
+}
+}
+
+@media (max-width:350px){
+  .menu-lateral{
+      
+    
+    .botao-lateral {
+  background-size: 40%;
+  
+    }
+}
+}
+
+@media (max-width:250px){
+  .piramide-container{
+    
+    top: 200% !important;
+   
+        
+  
+  }
+  }
