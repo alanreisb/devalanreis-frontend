@@ -43,10 +43,12 @@ class FormMessage extends Component {
             mensagem: this.state.mensagem
         })
             .then(function (response) {
-                console.log(response);
+                if(response.ok){
+                    alert('Obrigado pelo contato. \n Mensagem foi enviada!');
+                }
             })
             .catch(function (error) {
-                console.log(error);
+                alert('Desculpe, ocorreu um erro. \n Por favor tente outra forma de contato.');
             });
     };
     render() {
