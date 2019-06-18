@@ -9,7 +9,7 @@ import wpIcon from '../components/imagens/icones contato/whatsapp.png';
 import lkIcon from '../components/imagens/icones contato/linkedin.png';
 //Classes
 const contatosLocalizacaoClasse = 'fonte-secundaria pt-4 mt-0 text-center ';
-const contatosLocalizacaoSecaoClasse = 'rounded pl-0 text-left mt-3';
+const contatosLocalizacaoSecaoClasse = ' pl-0 text-left mt-3';
 const contatosLocalizacaoTituloClasse = 'w-75 pl-0 text-left text-light font-weight-bold mt-0 d-flex flex-row ';
 const contatosLocalEndereco = 'text-justify mt-3 fonte-secundaria font-weight-bold endereco';
 const contatosLocalIcones = 'flex-row d-flex text-light m-0 mt-3 mb-4 ml-0 p-0';
@@ -53,7 +53,7 @@ class Contatos extends Component {
                             </li>
                         </ul>
 
-                        <iframe className='mapa' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117888.9197057426!2d-45.25190273647298!3d-22.57802836110393!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ccba25567987bd%3A0x92b702e677e1cb47!2sPiquete+-+SP%2C+12620-000!5e0!3m2!1spt-BR!2sbr!4v1559961653681!5m2!1spt-BR!2sbr" width="400px" height="250px" frameborder="0" allowfullscreen></iframe>
+                        <iframe className='mapa' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117888.9197057426!2d-45.25190273647298!3d-22.57802836110393!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ccba25567987bd%3A0x92b702e677e1cb47!2sPiquete+-+SP%2C+12620-000!5e0!3m2!1spt-BR!2sbr!4v1559961653681!5m2!1spt-BR!2sbr"  height="250px" frameborder="0" allowfullscreen></iframe>
 
                     </div>
                 </div>
