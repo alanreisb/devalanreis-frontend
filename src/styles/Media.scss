@@ -152,7 +152,6 @@
     top: 80%;
     margin-left:auto !important;
     margin-right:auto !important;
-
     left:0 !important;
     width: 100%;
         
@@ -299,10 +298,21 @@
 
 @media (max-width:400px){
 .piramide-container{
-  
-  top: 120%;
+  width: 100% !important;
+  top: 80%;
   margin-left: auto !important;
   margin-right: auto !important;
+  >.piramide{
+    width: 100%;
+ 
+    > .side {
+      border-left: 30%  solid transparent;
+      border-right: 30% solid transparent;
+      border-bottom: 60% solid rgba(50,50,50,.3);
+    }
+  
+  }
+  
 
       
 
