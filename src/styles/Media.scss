@@ -299,16 +299,20 @@
 @media (max-width:400px){
 .piramide-container{
   width: 100% !important;
-  top: 80%;
+  bottom: 10%;
+  left: 0 !important;
   margin-left: auto !important;
   margin-right: auto !important;
+  
   >.piramide{
     width: 100%;
+    transform: translateX(15%);
  
     > .side {
-      border-left: 30%  solid transparent;
-      border-right: 30% solid transparent;
-      border-bottom: 60% solid rgba(50,50,50,.3);
+      border-left: 100px  solid transparent !important;
+      border-right: 100px solid transparent !important;
+      border-bottom: 200px solid rgba(50,50,50,.3) !important;
+      background-position: center -150%;
     }
   
   }
