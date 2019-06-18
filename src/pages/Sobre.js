@@ -9,7 +9,7 @@ const principalClasses = 'container-fluid m-0 p-0';
 class Sobre extends Component {
   render() {
     return (
-      <div className={`${principalClasses} container-fluid`}>
+      <div className={`${principalClasses} pagina-secundaria`}>
         
         <MenuLateral></MenuLateral>
         

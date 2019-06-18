@@ -10,7 +10,7 @@ const principalClasses = ' m-0 p-0';
 class Habilidades extends Component {
     render() {
         return (
-            <div className={`${principalClasses} `}>
+            <div className={`${principalClasses} pagina-secundaria `}>
                 <MenuLateral></MenuLateral>
                 
                 <Texto titulo='Habilidades' >

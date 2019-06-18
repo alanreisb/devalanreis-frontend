@@ -1,7 +1,17 @@
+@media (max-width:1200px) and (min-width:800px){
+.indicador-habilidades{
+ left: 80px !important ;
+float: left;
+
+}
+}
+
 @media (max-width: 800px) {
     html,body{
         overflow: auto;
     }
+
+
 // ### MENU LATERAL ###
     .menu-lateral{
 
@@ -94,7 +104,7 @@
   margin:0;
   height:100% ;
   width: 100%;
-  overflow: hidden; 
+  overflow: hidden !important; 
 
   > .titulo-container{
     font-size: 1.5rem !important;
@@ -149,7 +159,7 @@
 
   .piramide-container{
     height: 100%;
-    top: 80%;
+    top: 50%;
     margin-left:auto !important;
     margin-right:auto !important;
     left:0 !important;
@@ -165,9 +175,7 @@
     float: left !important;
     clear: left;
     margin-top:20px;
-    margin-left:15px;
-    min-width: 400px;
-    position: relative;
+    left:1px;
     
 
     > .lista{
@@ -251,6 +259,7 @@
 
 @media (max-width: 580px) {
   .pagina-principal{
+    overflow: hidden !important;
    > .titulo-container{
      > .titulo{
       top: 50% !important;
@@ -287,22 +296,34 @@
 
     .piramide-container{
   
-      top: 100%;
+      top: 50%;
+
+      > .piramide{
+          > .side{
+              right:30%;
+          }
+      }
 
           
   
     }
-  
+    .indicador-habilidades{
+    width: 80%;
+  }
     
 }
 
 @media (max-width:400px){
+  .pagina-principal{
+    overflow: hidden !important;
+  }
 .piramide-container{
   width: 100% !important;
-  bottom: 10%;
+  top: 70%;
   left: 0 !important;
   margin-left: auto !important;
   margin-right: auto !important;
+  
   
   >.piramide{
     width: 100%;

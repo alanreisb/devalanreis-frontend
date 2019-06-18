@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Barra from './barra';
 
-const indicadorClasse = 'h-100 float-right container-fluid position-relative p-0';
+const indicadorClasse = 'h-100 float-right position-relative p-0';
 
 
 class indicadores extends Component {

@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class piramide extends Component {
     render() {
         return (
-            <div className=' piramide-container'>
+            <div className=' piramide-container d-flex-row d-flex justify-content-center'>
                 <section className='piramide'>
                     <div className='side left'></div>
                     <div className='side front'></div>

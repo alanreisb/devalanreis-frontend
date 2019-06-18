@@ -21,7 +21,7 @@ const principalClasses = 'w-100 h-100 m-0 p-0 ';
 class Contatos extends Component {
     render() {
         return (
-            <div className={`${principalClasses} `}>
+            <div className={`${principalClasses}  pagina-secundaria`}>
                 <MenuLateral></MenuLateral>
                 <div className={`contatos-localizacao ${contatosLocalizacaoClasse}`}>
                     <div className={`secao ${contatosLocalizacaoSecaoClasse}`} >
