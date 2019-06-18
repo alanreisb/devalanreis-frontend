@@ -29,8 +29,6 @@ class App extends Component {
     document.title = "Dev Alan Reis"
   }
   render() {
-    console.log(this.state);
-    console.log("This is the process.env", process.env.PUBLIC_URL);
     return (
 
       <div className="App" >
