@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Envelope from '../imagens/icones contato/envelope.svg';
 require('dotenv').config()
 const axios = require('axios');
 //Imagem
@@ -6,8 +7,6 @@ const axios = require('axios');
 
 
 //Classes
-
-import Envelope from '../imagens/icones contato/envelope.svg';
 const formClasse = 'p-4 mt-0 text-left fonte-secundaria ';
 const formTituloClasse = 'w-100 d-flex flex-row';
 const labelClass = 'mt-3 mb-0 ';
