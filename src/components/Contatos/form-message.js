@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Envelope from '../imagens/icones contato/envelope.svg';
-require('dotenv').config()
+require('dotenv').config();
 const axios = require('axios');
 //Imagem
 
@@ -30,14 +30,12 @@ class FormMessage extends Component {
 
     handleChange(e) {
         this.setState({[e.target.name]:e.target.value});
-         console.log(this.state);
     };
 
 
     handleSubmit(e) {
 
         e.preventDefault();
-        console.log('exectando');
         axios.post(`${process.env.APP_CREATE_REACT_API_URL}`, {
             nome: this.state.nome,
             email: this.state.email,
