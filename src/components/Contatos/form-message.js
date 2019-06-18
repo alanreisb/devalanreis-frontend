@@ -36,6 +36,7 @@ class FormMessage extends Component {
     handleSubmit(e) {
 
         e.preventDefault();
+        console.log(`${process.env.APP_CREATE_REACT_API_URL}`);
         axios.post(`${process.env.APP_CREATE_REACT_API_URL}`, {
             nome: this.state.nome,
             email: this.state.email,
