@@ -6,7 +6,7 @@ class barra extends Component {
             <div className='text-left mt-0 mb-2 w-100  m-0 p-0' style={{backgroundColor:'black',borderColor:'black', height:'60%!important'}}>
                 
                 <div class="row"  >
-                    <div class="col-md-10" >
+                    <div class="col-md-8" >
                         <div class={`progress ${this.props.cor}`} style={{height:'70%'}}>
                             <h3 class="progress-title">{this.props.titulo}</h3>
                             <div class="progress-bar">

@@ -1,7 +1,11 @@
 @media (max-width:1200px) and (min-width:800px){
+  html,body{
+    overflow: auto;
+  }
 .indicador-habilidades{
  left: 80px !important ;
-float: left;
+ float: left;
+ 
 
 }
 }
