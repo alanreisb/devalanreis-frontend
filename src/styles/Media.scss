@@ -158,12 +158,14 @@ float: left;
   }
 
   .piramide-container{
-    height: 100%;
-    top: 50%;
+    
+    top: 400px !important;
     margin-left:auto !important;
     margin-right:auto !important;
     left:0 !important;
     width: 100%;
+    overflow: hidden;
+    
         
 
   }
@@ -296,7 +298,7 @@ float: left;
 
     .piramide-container{
   
-      top: 50%;
+      top: 550px;
 
       > .piramide{
           > .side{
@@ -319,7 +321,7 @@ float: left;
   }
 .piramide-container{
   width: 100% !important;
-  top: 70%;
+  top: 610px !important;
   left: 0 !important;
   margin-left: auto !important;
   margin-right: auto !important;
