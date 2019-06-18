@@ -1,11 +1,19 @@
+@media (min-width:1200px) and (max-width:2000px){
+.indicador-habilidades{
+ left: unset ;
+ float: right;
+ width:50% !important ;
+
+}
+}
 @media (max-width:1200px) and (min-width:800px){
   html,body{
     overflow: auto;
   }
 .indicador-habilidades{
- left: 80px !important ;
+ left: 80px ;
  float: left;
- 
+ width:80% !important ;
 
 }
 }
@@ -181,8 +189,8 @@
     float: left !important;
     clear: left;
     margin-top:20px;
-    left:1px;
-    
+    left:100px;
+    width: 80%;
 
     > .lista{
     
@@ -190,7 +198,7 @@
   
     > .item{
       height: 100%;
-      width: 240px;
+      
       border-radius: 10px;
     }
   }

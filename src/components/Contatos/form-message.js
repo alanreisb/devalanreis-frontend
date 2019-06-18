@@ -7,7 +7,7 @@ const axios = require('axios');
 
 
 //Classes
-const formClasse = 'p-4 mt-0 text-left fonte-secundaria ';
+const formClasse = 'p-4 mt-0 text-left fonte-secundaria col-';
 const formTituloClasse = 'w-100 d-flex flex-row';
 const labelClass = 'mt-3 mb-0 ';
 const botaoClasse = 'btn btn-secondary float-right  btn-lg col-4';
