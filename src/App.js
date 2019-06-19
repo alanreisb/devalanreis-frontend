@@ -9,13 +9,9 @@ import Bootstrap from 'bootstrap/dist/css/bootstrap.min.css';
 import Animate from './styles/Animate.css';
 import Animacoes from './styles/Animacoes.scss';
 import Media from './styles/Media.scss';
-/*Paginas*/
-
-
-
 import LoadingImagem from './components/imagens/loading/loading.gif';
 import LoadingTexto from './components/imagens/loading/texto.gif';
-
+/*Paginas*/
 const Principal = lazy(() => import('./pages/Principal'));
 const Sobre = lazy(() => import('./pages/Sobre'));
 const Portfolio = lazy(() => import('./pages/Portfolio'));

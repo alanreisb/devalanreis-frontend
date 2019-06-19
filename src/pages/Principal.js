@@ -13,17 +13,17 @@ class Principal extends Component {
         return (
             <div className='pagina-principal'>
                 <Media query="(max-width: 599px)">
-          {matches =>
-            matches ? (
-                <MenuLateral></MenuLateral>
-                
-            ) : (
-                <Menu></Menu>
-            )
-          }
-        </Media>
-                
-               
+                    {matches =>
+                        matches ? (
+                            <MenuLateral></MenuLateral>
+
+                        ) : (
+                                <Menu></Menu>
+                            )
+                    }
+                </Media>
+
+
                 <Titulo></Titulo>
                 <div className='cover'>
                     <img src={require('../components/imagens/BlackHole.gif')} className='imagem'></img>

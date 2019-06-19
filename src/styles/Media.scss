@@ -1,4 +1,4 @@
-@media only screen and (max-width:2000px){
+@media only screen and (max-width:2000px) and (min-width:1201px){
 .indicador-habilidades{
  left: 100px !important ;
  float: right;
@@ -167,6 +167,16 @@
   }
 }
 
+.player{
+ 
+  top:85%;
+  width:380px;
+  height:240px;
+
+  &:hover{
+    transform: translate(-380px,-100px);
+  }
+}
 //### SOBRE ###
 .texto-principal{
     clear: right;   
@@ -313,6 +323,17 @@
     }
     }
 
+    .player{
+ 
+      top:85%;
+      width:300px;
+      height:180px;
+    
+      &:hover{
+        transform: translate(-300px,-80px);
+      }
+    }
+
     .piramide-container{
   
       top: 550px;
@@ -354,6 +375,18 @@
   .pagina-principal{
     overflow: hidden !important;
   }
+
+  .player{
+ 
+    top:85%;
+    width:230px;
+    height:150px;
+  
+    &:hover{
+      transform: translate(-230px,-80px);
+    }
+  }
+
 .piramide-container{
   width: 100% !important;
   top: 610px !important;
