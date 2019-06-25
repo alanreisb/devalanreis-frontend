@@ -1,11 +1,7 @@
 import React, { Component } from 'react';
 import Envelope from '../imagens/icones contato/envelope.svg';
-require('dotenv').config();
-const axios = require('axios');
-//Imagem
-
-
-
+//Funções
+import {EnviarEmail} from '../../api/enviar-email';
 //Classes
 const formClasse = 'p-4 mt-0 text-left fonte-secundaria';
 const formTituloClasse = 'w-100 d-flex flex-row';
@@ -36,21 +32,7 @@ class FormMessage extends Component {
     handleSubmit(e) {
 
         e.preventDefault();
-        axios.post(`${process.env.REACT_APP_API_URL}`, {
-            nome: this.state.nome,
-            email: this.state.email,
-            mensagem: this.state.mensagem
-        })
-            .then(function (response) {
-                if(response.status === 200){
-                    window.alert('Obrigado pelo contato. \n Mensagem foi enviada!');
-                }
-               
-            })
-            .catch(function (error) {
-                window.alert('Desculpe, ocorreu um erro. \n Por favor tente outra forma de contato.')
-                   console.log(error);
-            });
+        EnviarEmail(this.state.nome,this.state.email,this.state.mensagem);
     };
     render() {
         return (
