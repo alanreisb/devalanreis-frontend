@@ -1,84 +1,84 @@
 /* 
 /*Reset*/
-*{margin:0;
-   padding:0;
-   font-weight: 300;
-   border:none;
-   outline:none;
-   box-sizing: 
-   border-box;
+* {
+  margin: 0;
+  padding: 0;
+  font-weight: 300;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
 
-   overflow:hidden;}
+  overflow: hidden;
+}
+
+a {
+  color: white !important;
+  &:visited {
+    color: white !important;
+    text-decoration: none !important;
+  }
+}
 
 //Configurações Principais
-html,body{
+html,
+body {
   display: block;
-  width:100%;
-  height:100%;
-  position: absolute;
-  margin:0;
-  padding:0;
-  overflow: hidden;
-  background-color: black !important; 
-  
-}
-
-a:visited{
-  color:white;
-  text-decoration: none !important; 
-
-}
-
-.fonte-secundaria{
-  font-family: arial;
-  color:white;
-}
-
-
-
-
-
-//Carregamento da Página
-.loading-screen{
-  width:100%;
+  width: 100%;
   height: 100%;
   position: absolute;
-  
-  > .loading-container{
-    position:absolute;
-    margin-left:38%;
-    margin-right:42%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black !important;
+}
+
+a:visited {
+  color: white;
+  text-decoration: none !important;
+}
+
+.fonte-secundaria {
+  font-family: arial;
+  color: white;
+}
+
+//Carregamento da Página
+.loading-screen {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+
+  > .loading-container {
+    position: absolute;
+    margin-left: 38%;
+    margin-right: 42%;
     top: 40%;
     width: 20%;
     height: 25%;
     align-content: center;
-    padding:none;
+    padding: none;
     overflow: visible;
 
-> .imagem{
+    > .imagem {
+      height: 70%;
+      width: 100%;
+      object-fit: contain;
+      margin: 0;
+    }
 
-  height:70%;
-  width: 100%;
-  object-fit: contain; 
-  margin:0;
-  
-}
-
-> .texto{
-  width: 15%;
-  height: auto;
-  object-fit: contain; 
-  margin-left: 49%;
-  margin-right: 36%;
-
-}
-}
+    > .texto {
+      width: 15%;
+      height: auto;
+      object-fit: contain;
+      margin-left: 49%;
+      margin-right: 36%;
+    }
+  }
 }
 
 //Menu Lateral
 
-.menu-lateral{
-  
+.menu-lateral {
   background: #181818;
   width: 60px;
   height: 100%;
@@ -86,50 +86,44 @@ a:visited{
   top: 0;
   z-index: 3;
   min-height: 500px;
-  
 
   .botao-lateral {
     background-size: 38% 38%;
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
     background-position: center 50%;
-    background-color: transparent; 
-    color: transparent; 
-    font-size: 0.7em; 
+    background-color: transparent;
+    color: transparent;
+    font-size: 0.7em;
     z-index: 3;
     margin: 0;
     padding: 0;
     cursor: pointer !important;
-    outline: none; 
-    user-select: none; 
+    outline: none;
+    user-select: none;
   }
-  
-> .lista{
-  top: 40%;
-  position: absolute;
-  width: 100%;
-  margin-top: -120px;
-  text-align: left;
 
-   
+  > .lista {
+    top: 40%;
+    position: absolute;
+    width: 100%;
+    margin-top: -120px;
+    text-align: left;
 
- > .item{
-  width: 100%;
-  height: 50px;
-  margin-bottom: 15px;
-  text-align: left;
+    > .item {
+      width: 100%;
+      height: 50px;
+      margin-bottom: 15px;
+      text-align: left;
 
-  
-
-  > .link:hover button{
-    color:white !important;
-    background-image: none !important;
-    
+      > .link:hover button {
+        color: white !important;
+        background-image: none !important;
+      }
+    }
   }
- }
-}
 
-> .contatos-lista{
-  position: absolute;
+  > .contatos-lista {
+    position: absolute;
     bottom: 20px;
     width: 100%;
     display: block;
@@ -137,7 +131,7 @@ a:visited{
     list-style: none;
     text-align: center;
     margin: 0;
-    > .item{
+    > .item {
       width: 45% !important;
       height: 25px !important;
       margin-bottom: 5px !important;
@@ -145,174 +139,155 @@ a:visited{
       margin-left: auto !important;
       margin-right: auto !important;
     }
-}
-
+  }
 }
 
 //### Pagina Principal ###
-.pagina-principal{
-  margin:0;
-  height:100% ;
+.pagina-principal {
+  margin: 0;
+  height: 100%;
   width: 100%;
-  overflow: hidden; 
+  overflow: hidden;
 
-  > .titulo-container{
-    font-size:2.17rem;
-    
-  
+  > .titulo-container {
+    font-size: 2.17rem;
 
-    > .titulo{
-    position: absolute;
-    top: 35%;
-    left:3%;
-    text-align: left;
-    align-content: center;
-    overflow: visible;
-    user-select: none;
+    > .titulo {
+      position: absolute;
+      top: 35%;
+      left: 3%;
+      text-align: left;
+      align-content: center;
+      overflow: visible;
+      user-select: none;
 
-    > .digitacao{
+      > .digitacao {
+        color: white;
+        text-align: left;
+        line-height: 1;
+        font-weight: 600;
+        overflow: hidden; /* Ensures the content is not revealed until the animation */
+        border-right: .15em solid transparent; /* The typwriter cursor */
+        white-space: nowrap; /* Keeps the content on a single line */
+        margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+        letter-spacing: '.15em'; /* Adjust as needed */
+        width: 0;
+        animation-fill-mode: forwards;
+        font-family: Azonix;
+      }
+    }
+
+    > .subtitulo {
+      position: absolute;
+      top: 45%;
+      margin-top: 5% !important;
       color: white;
       text-align: left;
       line-height: 1;
       font-weight: 600;
-      overflow: hidden; /* Ensures the content is not revealed until the animation */
-      border-right: .15em solid transparent; /* The typwriter cursor */
-      white-space: nowrap; /* Keeps the content on a single line */
-      margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-      letter-spacing: '.15em'; /* Adjust as needed */
-      width: 0;
-      animation-fill-mode: forwards;
-      font-family:Azonix;
+      overflow: visible;
+      white-space: nowrap;
+      left: 3%;
+      letter-spacing: .10em;
+      font-weight: 700;
+      font-family: Azonix;
     }
-    
   }
 
-  > .subtitulo{
-    position: absolute;
-    top: 45%;
-    margin-top:5% !important;
-    color: white;
-    text-align: left;
-    line-height: 1;
-    font-weight: 600;
-    overflow: visible; 
-    white-space: nowrap;
-    left:3%;
-    letter-spacing: .10em;
-    font-weight:700;
-    font-family:Azonix;
-    
-    
-    
-  }
-  }
-  
-
-   >.cover {
+  > .cover {
     width: 20%;
     height: 50%;
     background-color: 'black';
     left: 70%;
-    margin-top:5%;
+    margin-top: 5%;
     position: absolute;
     overflow: visible;
 
-    > .imagem{
+    > .imagem {
       object-fit: contain;
       width: 100%;
       height: 100%;
-     }
+    }
   }
-
-  
-  
 }
 
 //Navegador Principal]
-.menu-principal{
+.menu-principal {
   min-width: 400px;
-> .lista{
-> .item{
-> .nav-link{
-  position: relative;
-  color: white !important;
-  font-weight: 400;
-  font-size: 1rem;
-  text-decoration: none;
-  font-family: Azonix;
+  > .lista {
+    > .item {
+      > .nav-link {
+        position: relative;
+        color: white !important;
+        font-weight: 400;
+        font-size: 1rem;
+        text-decoration: none;
+        font-family: Azonix;
 
-  &:hover{
- 
-    color: #000;
+        &:hover {
+          color: #000;
+        }
+
+        &::before {
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 2px;
+          bottom: 0;
+          left: 0;
+          background-color: white;
+          visibility: hidden;
+          -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+          -webkit-transition: all 0.3s ease-in-out 0s;
+          transition: all 0.5s ease-in-out 0s;
+        }
+
+        &:hover:before {
+          visibility: visible;
+          -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+        }
+      }
+    }
   }
-
-  &::before{
-  
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: white;
-    visibility: hidden;
-    -webkit-transform: scaleX(0);
-    transform: scaleX(0);
-    -webkit-transition: all 0.3s ease-in-out 0s;
-    transition: all 0.5s ease-in-out 0s;
-  
-}
-
-&:hover:before {
-  visibility: visible;
-  -webkit-transform: scaleX(1);
-  transform: scaleX(1);
-}
-}
-}
-}
 }
 //Player
-.player{
-    padding:0;
-    left:100% !important;
-    top:85%;
-    width:426px;
-    height:240px;
-    position: absolute !important;
-    overflow: visible;
-    transition-property:  transform;
-    transition-duration: 2s;
-    
-    
+.player {
+  padding: 0;
+  left: 100% !important;
+  top: 85%;
+  width: 426px;
+  height: 240px;
+  position: absolute !important;
+  overflow: visible;
+  transition-property: transform;
+  transition-duration: 2s;
 
-  &:before{
-  width:60px;
-  position: absolute;
-  height:60px;
-  box-shadow:-1px 0.8px #939393,  0px -0.8px #939393;
-  left: -60px;
-  top: 5px;
-  z-index: 3;
-  border-radius:35px 0 0 35px;
-  background-color: black;
-  background-image: url(../components/imagens/player/music.gif);
-  background-size:100% 100%;
-  background-repeat: no-repeat;
-  background-position-x:right;
-  background-position-y:center;
-  content: '';
+  &:before {
+    width: 60px;
+    position: absolute;
+    height: 60px;
+    box-shadow: -1px 0.8px #939393, 0px -0.8px #939393;
+    left: -60px;
+    top: 5px;
+    z-index: 3;
+    border-radius: 35px 0 0 35px;
+    background-color: black;
+    background-image: url(../components/imagens/player/music.gif);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: center;
+    content: '';
   }
-  &:hover{
-    transform: translate(-426px,-150px);
-    
-    
+  &:hover {
+    transform: translate(-426px, -150px);
   }
 }
 
-
 //Texto Principal Paginas
-.texto-principal{
+.texto-principal {
   float: left;
   color: white;
   margin-top: 8%;
@@ -320,15 +295,12 @@ a:visited{
   width: 35%;
   z-index: 3;
   line-height: 1.5;
-  margin-left:120px;
-  
+  margin-left: 120px;
 }
-
-
 
 //###Sobre###
 //Piramide Sobre
-.piramide-container{
+.piramide-container {
   width: 50%;
   position: absolute;
   left: 50%;
@@ -336,12 +308,12 @@ a:visited{
   vertical-align: middle;
   padding: 0;
 
-  >.piramide{
+  > .piramide {
     width: 100%;
     height: 100%;
-    top:0;
+    top: 0;
     margin: 0;
-    padding:0;
+    padding: 0;
     perspective: 420px;
     perspective-origin: 50% 40%;
     > .side {
@@ -352,57 +324,52 @@ a:visited{
       height: 0;
       border-left: 120px solid transparent;
       border-right: 120px solid transparent;
-      border-bottom: 240px solid rgba(50,50,50,.3);
+      border-bottom: 240px solid rgba(50, 50, 50, .3);
       transform-origin: 50% 0%;
       animation: spin 5s infinite linear;
       visibility: hidden;
-      background-repeat: no-repeat; 
+      background-repeat: no-repeat;
       background-position: center -230%;
-       background-size: 60px; 
-       z-index: 3;
-        opacity: '1';
-        
+      background-size: 60px;
+      z-index: 3;
+      opacity: '1';
     }
 
     > .front {
       background-image: url('../components/imagens/logos/nodejs.png');
     }
     > .back {
-      animation-delay:  2.5s;
+      animation-delay: 2.5s;
       background-image: url('../components/imagens/logos/jquery.png');
     }
-      
+
     > .right {
       animation-delay: 1.25s;
       background-image: url('../components/imagens/logos/csharp.png');
     }
-    
+
     > .left {
       animation-delay: 3.75s;
       background-image: url('../components/imagens/logos/react.png');
-    
     }
-  
   }
 }
 
 //### HABILIDADES ###
 //Indicador
-.indicador-habilidades{
-  float: right ;
-  clear: none ;
+.indicador-habilidades {
+  float: right;
+  clear: none;
   width: 50% !important;
   position: relative;
   margin-left: 5%;
-  > .lista{
+  > .lista {
     margin-top: 5%;
     padding-left: 0%;
     padding-right: 1%;
-    
-    
   }
 
-  > .item{
+  > .item {
     height: 100%;
     width: 90% !important;
     border-radius: 10px;
@@ -410,7 +377,7 @@ a:visited{
 }
 
 //### PORTFOLIO ###
-.portfolio-pagina{
+.portfolio-pagina {
   margin-top: 12%;
   margin-left: auto;
   margin-right: auto;
@@ -419,84 +386,77 @@ a:visited{
   height: 45%;
   width: 60%;
 
-  a:visited{
-    color:white;
-    text-decoration: none !important; 
-  } 
+  a:visited {
+    color: white;
+    text-decoration: none !important;
+  }
 }
 //## CONTATOS ###
 //Localização
-.contatos-localizacao{
+.contatos-localizacao {
   margin-left: 10%;
   top: 0;
   width: 35% !important;
   height: 90%;
-  float:left;
+  float: left;
 
-  > .secao{
+  > .secao {
     width: 100% !important;
-    >.mapa{
+    > .mapa {
       width: 400px;
     }
-    > .titulo{
-      > .icone{
+    > .titulo {
+      > .icone {
         object-fit: cover;
         animation-timing-function: ease-out;
         animation-duration: 0.4s;
-        width:35px;
+        width: 35px;
         height: 35px;
-
       }
     }
-    > .endereco{
+    > .endereco {
       line-height: 2;
     }
 
-    > .icones-contato{
+    > .icones-contato {
       object-fit: cover;
       width: 35px;
       height: 35px;
+      margin-right: 20px;
     }
   }
 }
 
-.form-mensagem{
+.form-mensagem {
   height: 90%;
   width: 480px;
   float: right;
-  margin-right:15%;
-> .formulario{
-  width: 100%;
-  height: 100%;
-  > .titulo-form{
-    
-    > .icone-form{
-      width:70px;
-      height:70px;
-      animation-timing-function: ease-out;
-      animation-duration:0.4s;
-      object-fit: contain;
+  margin-right: 15%;
+  > .formulario {
+    width: 100%;
+    height: 100%;
+    > .titulo-form {
+      > .icone-form {
+        width: 70px;
+        height: 70px;
+        animation-timing-function: ease-out;
+        animation-duration: 0.4s;
+        object-fit: contain;
+      }
+    }
 
-      
+    > .subtitulo {
+      font-weight: 500;
+    }
+    > .etiqueta {
+      font-weight: 600;
+      font-size: 1.2em;
+    }
+    > .form-botao {
+      margin-right: 10%;
+      margin-top: 8%;
+      font-weight: 600;
+      font-size: 1.2em;
     }
   }
-
-  > .subtitulo{
-    font-weight: 500;
-
-  }
-  > .etiqueta{
-    font-weight: 600;
-    font-size: 1.2em;
-  }
-  > .form-botao{
-    margin-right: 10%;
-    margin-top: 8%;
-    font-weight: 600;
-    font-size: 1.2em;
-    
-  }
 }
-}
-
-
