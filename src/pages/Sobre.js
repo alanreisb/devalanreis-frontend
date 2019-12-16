@@ -26,8 +26,8 @@ class Sobre extends Component {
           ser dinâmico ao executar uma tarefa.
           <br />
           <br />
-          Atualmente estou em busca de um vaga como desenvolvedor front-end
-          junior.
+          Atualmente estou em busca de uma oportunidade como desenvolvedor
+          front-end junior.
         </Texto>
 
         <Piramide />
