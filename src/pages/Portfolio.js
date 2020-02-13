@@ -17,7 +17,7 @@ class Portfolio extends Component {
         <MenuLateral />
 
         <div className='portfolio-pagina fonte-secundaria'>
-          <div className='text-center font-weight-bold'>
+          <div className='text-left font-weight-bold'>
             <a href='https://cine-atlantico.herokuapp.com/' target='_blank'>
               CineAtlantico - ECommerce
             </a>
@@ -32,7 +32,7 @@ class Portfolio extends Component {
                     <img
                       src={CineAtlantico1}
                       width='auto'
-                      height='170px'
+                      height='180px'
                       style={{ objectFit: 'contain' }}
                     />
                   </figure>
@@ -45,7 +45,7 @@ class Portfolio extends Component {
                   title='ReactJS + SASS '
                 >
                   <figure>
-                    <img src={CineAtlantico2} width='auto' height='170px' />
+                    <img src={CineAtlantico2} width='auto' height='180px' />
                   </figure>
                 </a>
               </li>
@@ -56,14 +56,14 @@ class Portfolio extends Component {
                   title='ReactJS + SASS '
                 >
                   <figure>
-                    <img src={CineAtlantico3} width='auto' height='170px' />
+                    <img src={CineAtlantico3} width='auto' height='180px' />
                   </figure>
                 </a>
               </li>
             </ul>
           </div>
 
-          <div className='text-center font-weight-bold'>
+          <div className='text-left font-weight-bold'>
             <a href=''> Exodus - Landing Page</a>
             <ul className='d-flex d-inline-block mt-2'>
               <li className='mt-3 mb-3 mr-3 ml-0 item'>
