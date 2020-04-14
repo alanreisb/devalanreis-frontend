@@ -17,7 +17,7 @@ class Portfolio extends Component {
         <MenuLateral />
 
         <div className='portfolio-pagina fonte-secundaria'>
-          <div className='text-center font-weight-bold'>
+          <div className='text-left font-weight-bold'>
             <a href='https://cine-atlantico.herokuapp.com/' target='_blank'>
               CineAtlantico - ECommerce
             </a>
@@ -73,7 +73,7 @@ class Portfolio extends Component {
             </ul>
           </div>
 
-          <div className='text-center font-weight-bold'>
+          <div className='text-left font-weight-bold'>
             <a href=''> Exodus - Landing Page</a>
             <ul className='d-flex d-inline-block mt-2'>
               <li className='mt-3 mb-3 mr-3 ml-0 item'>
