@@ -32,8 +32,8 @@ class Portfolio extends Component {
                     <img
                       src={CineAtlantico1}
                       width='auto'
-                      height='170px'
-                      style={{ objectFit: 'cover' }}
+                      height='180px'
+                      style={{ objectFit: 'contain' }}
                     />
                   </figure>
                 </a>
@@ -45,7 +45,12 @@ class Portfolio extends Component {
                   title='ReactJS + SASS '
                 >
                   <figure>
-                    <img src={CineAtlantico2} width='auto' height='170px' />
+                    <img
+                      src={CineAtlantico2}
+                      width='auto'
+                      height='180px'
+                      style={{ objectFit: 'contain' }}
+                    />
                   </figure>
                 </a>
               </li>
@@ -56,7 +61,12 @@ class Portfolio extends Component {
                   title='ReactJS + SASS '
                 >
                   <figure>
-                    <img src={CineAtlantico3} width='auto' height='170px' />
+                    <img
+                      src={CineAtlantico3}
+                      width='auto'
+                      height='180px'
+                      style={{ objectFit: 'contain' }}
+                    />
                   </figure>
                 </a>
               </li>
@@ -73,7 +83,12 @@ class Portfolio extends Component {
                   title='HTML5 + BootStrap'
                 >
                   <figure>
-                    <img src={Exodus1} width='auto' height='180px' />
+                    <img
+                      src={Exodus1}
+                      width='auto'
+                      height='180px'
+                      style={{ objectFit: 'contain' }}
+                    />
                   </figure>
                 </a>
               </li>
@@ -84,7 +99,12 @@ class Portfolio extends Component {
                   title='HTML5 + BootStrap'
                 >
                   <figure>
-                    <img src={Exodus2} width='auto' height='180px' />
+                    <img
+                      src={Exodus2}
+                      width='auto'
+                      height='180px'
+                      style={{ objectFit: 'contain' }}
+                    />
                   </figure>
                 </a>
               </li>
@@ -95,7 +115,12 @@ class Portfolio extends Component {
                   title='HTML5 + BootStrap'
                 >
                   <figure>
-                    <img src={Exodus3} width='auto' height='180px' />
+                    <img
+                      src={Exodus3}
+                      width='auto'
+                      height='180px'
+                      style={{ objectFit: 'contain' }}
+                    />
                   </figure>
                 </a>
               </li>
