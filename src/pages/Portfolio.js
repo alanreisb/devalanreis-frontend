@@ -33,7 +33,7 @@ class Portfolio extends Component {
                       src={CineAtlantico1}
                       width='auto'
                       height='170px'
-                      style={{ objectFit: 'contain' }}
+                      style={{ objectFit: 'cover' }}
                     />
                   </figure>
                 </a>
