@@ -2,6 +2,7 @@ const axios = require('axios')
 require('dotenv').config()
 
 export function EnviarEmail (nome, email, mensagem) {
+  console.log(`${process.env.REACT_APP_API_URL}`)
   axios
     .post(`${process.env.REACT_APP_API_URL}`, {
       nome: nome,
