@@ -20,6 +20,7 @@ class Principal extends Component {
             src={require('../components/imagens/BlackHole.gif')}
             className='imagem'
           />
+          a
         </div>
 
         <Player />
