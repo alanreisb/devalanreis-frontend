@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "homepage": "https://devalanreis.herokuapp.com",
-  "proxy": "https://https://devalanreis-backend.herokuapp.com",
   "dependencies": {
     "animate.css": "^3.7.0",
     "axios": "^0.19.0",

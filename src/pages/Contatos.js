@@ -68,8 +68,8 @@ class Contatos extends Component {
               className='mapa'
               src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d64543.1153744142!2d-45.14741399380834!3d-22.729608362515197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ccc9201d468adf%3A0xc9ce9c4b4546c622!2sLorena%2C%20SP!5e0!3m2!1spt-BR!2sbr!4v1576537760145!5m2!1spt-BR!2sbr'
               height='250px'
-              frameborder='0'
-              allowfullscreen
+              frameBorder='0'
+              allowFullScreen
             />
           </div>
         </div>

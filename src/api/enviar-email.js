@@ -18,6 +18,6 @@ export function EnviarEmail (nome, email, mensagem) {
       window.alert(
         'Desculpe, ocorreu um erro. \n Por favor tente outra forma de contato.'
       )
-      console.log(error)
+      console.log(error.message)
     })
 }
