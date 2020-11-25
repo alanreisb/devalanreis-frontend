@@ -14,19 +14,16 @@ class Sobre extends Component {
 
         <Texto titulo='Sobre mim'>
           Sou um profissional apaixonado por desafios que nunca desiste de algo
-          que começa. Trabalhava na área administrativa anteriormente. Porém,
-          sempre quis me aproximar da área de tecnologia. Desenvolvia pequenas
-          aplicações VBA para automação de processos nas empresas em que
-          trabalhei até que finalmente resolvi mudar cursando Análise e
-          Desenvolvimento de Sistemas.
+          que começa. Decidi cursar Analise e Desenvolvimento de Sistemas como forma de
+           poder ajudar as pessoas em suas atividades simples de seu cotidiano.
           <br />
           <br />
-          Busco aprender toda a técnica disponível em grande parte do meu tempo
-          livre. Costumo ser perfeccionista com detalhes, ao mesmo tempo procuro
-          ser dinâmico ao executar uma tarefa.
+          Costumo ser perfeccionista com detalhes, ao mesmo tempo procuro
+          ser dinâmico ao executar uma tarefa. Sempre buscando novos conhecimentos que 
+          possam ser aplicados.
           <br />
           <br />
-          Atualmente estou em busca de uma oportunidade como desenvolvedor
+          Atualmente buscando uma oportunidade como desenvolvedor
           front-end junior.
         </Texto>
 
