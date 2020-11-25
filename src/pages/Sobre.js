@@ -24,7 +24,7 @@ class Sobre extends Component {
           <br />
           <br />
           Atualmente buscando uma oportunidade como desenvolvedor
-          front-end junior.
+          junior.
         </Texto>
 
         <Piramide />
