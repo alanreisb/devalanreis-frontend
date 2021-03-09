@@ -6,7 +6,9 @@ export function EnviarEmail (nome, email, mensagem) {
     .post(`${process.env.REACT_APP_API_URL}`, {
       nome: nome,
       email: email,
-      mensagem: mensagem
+      mensagem: mensagem,
+      destino: 'alanreisb@gmail.com',
+      assunto: 'Site Portfólio Mensagem: '
     })
     .then(function (response) {
       if (response.status === 200) {
