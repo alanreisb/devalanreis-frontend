@@ -1,454 +1,378 @@
-@media only screen and (max-width:2000px) and (min-width:1201px){
-.indicador-habilidades{
- left: 100px !important ;
- float: right;
- width:50% !important ;
+@media only screen and (max-width: 2000px) and (min-width: 1201px) {
+  .indicador-habilidades {
+    left: 100px !important;
+    float: right;
+    width: 50% !important;
+  }
 
+  .form-mensagem {
+    margin-left: 60px;
+  }
 }
-
-.form-mensagem{
-  margin-left: 60px;
-}
-}
-@media only screen and (max-width:1200px) {
-  html,body{
+@media only screen and (max-width: 1200px) {
+  html,
+  body {
     overflow-y: auto;
   }
-.indicador-habilidades{
- left: 120px!important;
- float: left;
- width:80% !important ;
+  .indicador-habilidades {
+    left: 120px !important;
+    float: left;
+    width: 80% !important;
+  }
 
-}
-
-.form-mensagem{
-  min-width: 480px;
-}
+  .form-mensagem {
+    min-width: 480px;
+    margin-left: 80px;
+  }
 }
 
 @media only screen and (max-width: 800px) {
-    html,body{
-        overflow-y: auto;
-    }
+  html,
+  body {
+    overflow-y: auto;
+  }
 
+  // ### MENU LATERAL ###
+  .menu-lateral {
+    display: inline-flex;
+    width: 100% !important;
+    height: 60px !important;
+    position: relative;
+    top: 0;
+    min-height: 20px;
 
-// ### MENU LATERAL ###
-    .menu-lateral{
-
-        display: inline-flex;
-        width: 100% !important;
-        height: 60px!important;
-        position: relative;
-        top: 0;
-        min-height: 20px;
-        
-      
-        .botao-lateral {
-      width: 100%!important;
-      height: 100%!important;
+    .botao-lateral {
+      width: 100% !important;
+      height: 100% !important;
       background-size: 30%;
       padding: 5%;
-        }
-        
-      > .lista{
-        top: 5px;
-        width: 100% !important;
-        height: 100%;
-        margin-top: 0;
-        text-align: left;
-        margin-left: auto;
-        margin-right:auto;
-        position: relative;
-      
-         
-      
-       > .item{
+    }
 
+    > .lista {
+      top: 5px;
+      width: 100% !important;
+      height: 100%;
+      margin-top: 0;
+      text-align: left;
+      margin-left: auto;
+      margin-right: auto;
+      position: relative;
+
+      > .item {
         height: 50px;
-        width: 20%!important;
+        width: 20% !important;
         float: left !important;
-        
-      
-        
-      
-        > .link:hover button{
-          color:white !important;
+
+        > .link:hover button {
+          color: white !important;
           background-image: none !important;
-          
         }
-       }
       }
+    }
 
-      > .contatos-lista{
-        position: fixed;
-        top:40%;
-        right:0;
-        display: block;
-        bottom: initial;
-        width: auto;
-        background-color:rgba(0,0,0,0.4);
-          > .item{
-         height: 30px !important;
-         width: 30px !important;
-         margin-right: 5px !important;
-         margin-left: 5px !important;
-         padding: 0;
-          }
+    > .contatos-lista {
+      position: fixed;
+      top: 40%;
+      right: 0;
+      display: block;
+      bottom: initial;
+      width: auto;
+      background-color: rgba(0, 0, 0, 0.4);
+      > .item {
+        height: 30px !important;
+        width: 30px !important;
+        margin-right: 5px !important;
+        margin-left: 5px !important;
+        padding: 0;
       }
+    }
+  }
 
-}
-
-//### PRINCIPAL ###
-.menu-principal{
+  //### PRINCIPAL ###
+  .menu-principal {
     padding: 0;
     width: 100%;
     text-align: center;
-    > .lista{
-        float:none;
-        padding:none;
-        width: 100%;
-    > .item{
+    > .lista {
+      float: none;
+      padding: none;
+      width: 100%;
+      > .item {
         width: 25%;
         padding: 0;
-    > .nav-link{
-    font-size: 0.7rem;
+        > .nav-link {
+          font-size: 0.7rem;
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .pagina-principal {
+    margin: 0;
+    height: 100%;
     width: 100%;
-    
+    overflow: hidden !important;
 
+    > .titulo-container {
+      font-size: 1.5rem !important;
+
+      > .titulo {
+        top: 40% !important;
+
+        > .digitacao {
+          line-height: 1;
+          font-weight: 300;
+          border-right: .15em solid transparent; /* The typwriter cursor */
+          letter-spacing: '.15em'; /* Adjust as needed */
+        }
+      }
+
+      > .subtitulo {
+        top: 55%;
+        font-size: 1.0rem;
+      }
     }
-}
-}
-}
-
-.pagina-principal{
-  margin:0;
-  height:100% ;
-  width: 100%;
-  overflow: hidden !important; 
-
-  > .titulo-container{
-    font-size: 1.5rem !important;
-    
-    > .titulo{
-      top: 40% !important;
-    
-    
-    
-  
-
-    > .digitacao{
-      line-height: 1;
-      font-weight: 300;
-      border-right: .15em solid transparent; /* The typwriter cursor */
-      letter-spacing: '.15em'; /* Adjust as needed */
-
-      
+    > .cover {
+      width: 20%;
+      height: 50%;
+      left: 70%;
+      margin-top: 0 !important;
+      top: 30%;
+      position: absolute;
+      > .imagem {
+      }
     }
   }
 
-  > .subtitulo{
-    
-    top:55%;
-    font-size: 1.0rem;
-    
-    
-  }
-  }
-   >.cover {
-    width: 20%;
-    height: 50%;
-    left: 70%;
-    margin-top:0 !important;
-    top:30%;
-    position: absolute;
-      > .imagem{
-     
-     }
-  }
-}
+  .player {
+    top: 85%;
+    width: 380px;
+    height: 240px;
 
-.player{
- 
-  top:85%;
-  width:380px;
-  height:240px;
-
-  &:hover{
-    transform: translate(-380px,-100px);
+    &:hover {
+      transform: translate(-380px, -100px);
+    }
   }
-}
-//### SOBRE ###
-.texto-principal{
-    clear: right;   
+  //### SOBRE ###
+  .texto-principal {
+    clear: right;
     height: 100%;
     width: 80%;
-    margin-top:80px;
-    margin-left:15px;
-   
+    margin-top: 80px;
+    margin-left: 15px;
   }
 
-  .piramide-container{
-    
+  .piramide-container {
     top: 400px !important;
-    margin-left:auto !important;
-    margin-right:auto !important;
-    left:0 !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    left: 0 !important;
     width: 100%;
     overflow: hidden;
-    
-        
-
   }
 }
 
 //### HABILIDADES ###
 //Indicador
-.indicador-habilidades{
-    float: left !important;
-    
-    margin-top:20px;
-    left:0px !important;
-    width: 400px;
+.indicador-habilidades {
+  float: left !important;
 
-    > .lista{
-    
-    }
-  
-    > .item{
-      height: 100%;
-      
-      border-radius: 10px;
-    }
+  margin-top: 20px;
+  left: 0px !important;
+  width: 400px;
+
+  > .lista {
   }
 
+  > .item {
+    height: 100%;
 
-  //### CONTATOS ###
-  .contatos-localizacao{
+    border-radius: 10px;
+  }
+}
+
+//### CONTATOS ###
+.contatos-localizacao {
   min-width: 400px;
-  left:5%!important;
+  left: 5% !important;
   margin-top: 80px;
-  width: 80% ;
+  width: 80%;
 
-  
-    > .secao{
-        > .mapa{
-            width:80%;
-            margin-left: auto;
-            margin-right: auto;
-        }
-      > .titulo{
-          width: 100%;
-        > .icone{
-      
-  
-        }
-      }
-      > .endereco{
-       
-      }
-  
-      > .icones-contato{
-        
-        width: 15px;
-        height: 15px;
+  > .secao {
+    > .mapa {
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    > .titulo {
+      width: 100%;
+      > .icone {
       }
     }
-  
-  }
+    > .endereco {
+    }
 
-  .form-mensagem{
-    float:left !important;
-    
-    
-  > .formulario{
-    > .titulo-form{
-
-      > .icone-form{
-      
-  
-        
-      }
-    }
-  
-    > .subtitulo{
-      
-  
-    }
-    > .etiqueta{
-    
-    }
-    > .form-botao{
- 
-      
+    > .icones-contato {
+      width: 15px;
+      height: 15px;
     }
   }
-  
-  
+}
+
+.form-mensagem {
+  float: left !important;
+
+  > .formulario {
+    > .titulo-form {
+      > .icone-form {
+      }
+    }
+
+    > .subtitulo {
+    }
+    > .etiqueta {
+    }
+    > .form-botao {
+    }
   }
+}
 
 @media only screen and (max-width: 580px) {
-  .pagina-principal{
+  .pagina-principal {
     overflow: hidden !important;
-   > .titulo-container{
-     > .titulo{
-      top: 50% !important;
+    > .titulo-container {
+      > .titulo {
+        top: 50% !important;
+      }
+
+      > .subtitulo {
+        top: 65%;
+      }
     }
 
-    > .subtitulo{
-      top:65%;
-    }
-  }
-
-   > .cover{
+    > .cover {
       top: 10% !important;
     }
   }
-    .menu-principal{
-    
-        > .lista{
-          
-          text-align: right;
-          
-        > .item{
-            float: right;
-          padding: 0;
-        > .nav-link{
-        font-size: 0.2rem;
-        padding: 1px;
-       
-        
-    
+  .menu-principal {
+    > .lista {
+      text-align: right;
+
+      > .item {
+        float: right;
+        padding: 0;
+        > .nav-link {
+          font-size: 0.2rem;
+          padding: 1px;
         }
-    }
-    }
-    }
-
-    .player{
- 
-      top:85%;
-      width:300px;
-      height:180px;
-    
-      &:hover{
-        transform: translate(-300px,-80px);
       }
     }
+  }
 
-    .piramide-container{
-  
-      top: 550px;
+  .player {
+    top: 85%;
+    width: 300px;
+    height: 180px;
 
-      > .piramide{
-          > .side{
-              right:30%;
-          }
-      }
-
-          
-  
+    &:hover {
+      transform: translate(-300px, -80px);
     }
-    .indicador-habilidades{
-    width: 80%!important;
+  }
+
+  .piramide-container {
+    top: 550px;
+
+    > .piramide {
+      > .side {
+        right: 30%;
+      }
+    }
+  }
+  .indicador-habilidades {
+    width: 80% !important;
     left: 0px !important;
   }
 
-  .form-mensagem{
+  .form-mensagem {
     margin-left: 10%;
-    width:90%; 
+    width: 90%;
     min-width: 350px;
-    margin-right:10%;
+    margin-right: 10%;
   }
-.contatos-localizacao{
-  > .secao{
-    
-    > .mapa{
-      width:90vh ;
-      position: relative;
-      
+  .contatos-localizacao {
+    > .secao {
+      > .mapa {
+        width: 90vh;
+        position: relative;
+      }
     }
   }
 }
-    
-}
 
-@media only screen and (max-width:400px){
-  .pagina-principal{
+@media only screen and (max-width: 400px) {
+  .pagina-principal {
     overflow: hidden !important;
   }
 
-  .player{
- 
-    top:85%;
-    width:230px;
-    height:150px;
-  
-    &:hover{
-      transform: translate(-230px,-80px);
+  .player {
+    top: 85%;
+    width: 230px;
+    height: 150px;
+
+    &:hover {
+      transform: translate(-230px, -80px);
     }
   }
 
-.piramide-container{
-  width: 100% !important;
-  top: 610px !important;
-  left: 0 !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
-  
-  
-  >.piramide{
+  .piramide-container {
+    width: 100% !important;
+    top: 610px !important;
+    left: 0 !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+
+    > .piramide {
+      width: 100%;
+
+      > .side {
+        border-left: 100px solid transparent !important;
+        border-right: 100px solid transparent !important;
+        border-bottom: 200px solid rgba(50, 50, 50, .3) !important;
+        background-position: center -150%;
+      }
+    }
+  }
+
+  .contatos-localizacao {
+    margin-left: 0px;
+    padding: 2%;
+    > .secao {
+      > .mapa {
+        width: 95%;
+        position: relative;
+      }
+    }
+  }
+
+  .form-mensagem {
+    margin-left: 1%;
     width: 100%;
-    
- 
-    > .side {
-      border-left: 100px  solid transparent !important;
-      border-right: 100px solid transparent !important;
-      border-bottom: 200px solid rgba(50,50,50,.3) !important;
-      background-position: center -150%;
-    }
-  
+
+    margin-right: 1%;
   }
 }
 
-.contatos-localizacao{
-  margin-left: 0px;
-  padding: 2%;
-  > .secao{
-    
-    > .mapa{
-      width:95% ;
-      position: relative;
-      
-      
-    }
-  }
-}
-
-.form-mensagem{
-  margin-left: 1%;
-  width:100%; 
-  
-  margin-right:1%;
-}
-
-}
-
-@media only screen and (max-width:350px){
-  .menu-lateral{
-      
-    
+@media only screen and (max-width: 350px) {
+  .menu-lateral {
     .botao-lateral {
-  background-size: 40%;
-  
+      background-size: 40%;
     }
-}
+  }
 }
 
-@media only screen and (max-width:250px){
-  .piramide-container{
-    
+@media only screen and (max-width: 250px) {
+  .piramide-container {
     top: 200% !important;
-   
-        
-  
   }
-  }
+}
